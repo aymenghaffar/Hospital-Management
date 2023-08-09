@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(74, 174, 214);
+}
+
+/* Navigation bar: Logo and Image  */
+#logo {
+    margin: 2px 18px;
+}
+
+#logo img {
+    margin: 1px 2px;
+    height: 55px;
+}
+
+#name {
+    margin: 2px 4px;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    padding: 1px -15px;
+    border-radius: 15px;
+}
+
+/* Navigation bar: List styling */
+
+#navbar ul {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 350px;
+}
+
+#navbar::before {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 1px 21px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 450px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url(bg5.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 78%;
+    width: 100%;
+    top: 18px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: snow;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 65px;
+
+}
+
+#home p {
+    color: snow;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 3px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid rgb(228, 225, 225);
+    background-color: skyblue;
+    color: rgb(211, 208, 208);
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* procedure category */
+#procedure {
+    display: flex;
+    flex-direction: column;
+    padding: 59px 450px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#procedure h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 85px;
+    font-size: 1.8rem;
+}
+
+#procedure p {
+    color: rgb(45, 44, 44);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 23px;
+
+}
+
+/* container box */
+#container {
+    margin: 14px;
+    display: flex;
+
+}
+
+#container .box {
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#container .box img {
+    height: 240px;
+    margin: auto;
+    display: block;
+}
+
+/* abouttt */
+#about {
+    margin: 45px;
+    display: flex;
+    /* background-color: rgba(217, 213, 213, 0.971); */
+    height: 750px;
+
+}
+
+#about .box {
+    padding: 104px;
+    height: 542px;
+
+}
+
+#about .box img {
+    height: 646px;
+    padding-left: 54px;
+    padding-top: -54px;
+    margin: 0px;
+    width: 550px;
+}
+
+#about .box1 h3 {
+
+    padding-top: 190px;
+    height: 62px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+}
+
+#about .box1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(82, 78, 78);
+
+}
+
+/* feedback */
+
+#patients {
+    display: flex;
+    margin: auto;
+    background-color: rgb(224, 222, 219);
+    height: 745px;
+}
+
+#patients .box2 {
+    display: block
+    
+}
+
+#patients .box2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 54px;
+    padding-left: 570px;
+}
+
+#patients .box2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 23px;
+    padding-left: 510px;
+    
+    color: grey;
+
+}
+
+#patients .box2 img {
+    height: 450px;
+    width: 450px;
+    padding: 52px 230px;
+    display: inline;
+    float: left;
+}
+
+#patients .box3{
+    display:block;
+}
+
+#patients .box3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 310px;
+    
+}
+#patients .box3 p{
+    padding-right: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 0.8rem;
+    color: grey;
+}
+
+
+/* our offered services */
+#service{
+display: flex;
+height: 500px;
+}
+#services.box{
+display: flex;
+}
+
+#services .box h2{
+text-align: center;
+justify-content: center;
+padding-top: 84px;
+}
+#services .box p{
+    text-align: center;
+    justify-content: center;
+    padding-top: 12px;
+}
+/* our */
+#our{
+    display: flex;
+    margin: 50px;
+}
+#our .box{
+    padding-top: 35px;
+    margin: 30px;
+    
+    
+}
+#our .box img{
+    height: 44px;
+    width: 44px;
+    padding-left: 145px;
+}
+#our .box h4{
+    padding-top: 24px;
+    padding-left: 110px;
+    
+}
+#our .box h4:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+
+#our .box p{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    text-align: center;
+    justify-content: center;
+    padding-left: 35px;
+
+    
+}
+
+/* servcing hourse and appointment booking */
+#cont{
+    display: flex;
+    background-color:  rgb(224, 222, 219); 
+    height: 550px;
+    margin: auto;
+}
+#cont .hours{
+display: block;
+/* background-color: blue; */
+height: 250px;
+width: 52%;
+
+}
+#cont .hours h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+    padding-left: 340px;
+}
+#cont .hours p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 23px;
+    padding-left:335px ;
+}
+#cont .me{
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* background-color: blueviolet; */
+    margin-top: 250px;
+    position:absolute;
+    height: 250px;
+    width: 51%;
+}
+#cont .me ul .items{
+   
+    padding-left: 333px;
+}
+
+
+/* Book an Appointment */
+
+#cont .book{
+    display: block;
+    padding-left: 75px;
+    padding-top: 33px;
+    background-color: white;
+    height: 515px;
+    width: 30%;
+}
+#cont .book h3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 135px;
+}
+#cont .book .form-group{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+   
+}
+.form-group input{
+    font-family:  'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    width: 415px;
+    padding: 1px;
+    border: 2px solid lightgray;
+    margin: 11px auto;
+    
+}
+.btn1{
+    font-family:  'Ubuntu', sans-serif;
+    margin: 0px 165px;
+    color: white;
+    background-color: skyblue;
+    padding: 8px 8px;
+    border: 2px solid skyblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: white;
+    color: skyblue;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 34px 20px;
+    margin-top: 34px;
+}
